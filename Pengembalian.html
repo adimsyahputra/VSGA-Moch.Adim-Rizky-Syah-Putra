@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pengembalian Buku - Perpustakaan Digital</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="P.png" alt="Perpustakaan Digital" height="50"> Perpustakaan
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pinjam Buku</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Kembalikan Buku</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kontak</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title text-center mb-4">Form Pengembalian Buku</h5>
+                        <form>
+                            <div class="form-group">
+                                <label for="inputNama">Nama Lengkap</label>
+                                <input type="text" class="form-control" id="inputNama" placeholder="Masukkan nama lengkap Anda">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputNIM">NIM</label>
+                                <input type="text" class="form-control" id="inputNIM" placeholder="Masukkan NIM Anda">
+                            </div>
+                            <div class="form-group">
+                                <label for="selectBuku">Pilih Buku</label>
+                                <select class="form-control" id="selectBuku">
+                                    <option selected disabled>Pilih buku yang akan dikembalikan</option>
+                                    <option value="Bulan">Bulan</option>
+                                    <option value="Matahari">Matahari</option>
+                                    <option value="Bumi">Bumi</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputTanggal">Tanggal Pengembalian</label>
+                                <input type="date" class="form-control" id="inputTanggal">
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-block">Kembalikan Buku</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Perpustakaan Digital. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
